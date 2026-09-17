@@ -14,6 +14,10 @@ Turn one portrait and a short script into a talking avatar video, from inside Cl
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="A fictional presenter portrait (left) and a frame from the talking-avatar clip it became (right), driven by a short synthesized English line. AI-generated with Beatra."></p>
+
+*A fictional presenter portrait (left) and a frame from the talking-avatar clip it became (right), driven by a short synthesized English line. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.0 |
@@ -41,6 +45,20 @@ Or paste this into your agent:
 
 ```text
 Install the talking-avatar-video skill from https://github.com/beatra-ai/talking-avatar-video-skill (folder skills/talking-avatar-video), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/preview.webp" width="800" alt="A 6-second talking-avatar clip made from one fictional portrait and a synthesized line: &quot;Hi! In thirty seconds, I&#x27;ll show you how our new planner app saves your mornings.&quot; AI-generated with Beatra."></p>
+
+[▶ Watch the full video (MP4)](assets/full.mp4)
+
+*Full talking-avatar clip with voice: a fictional product educator says "Hi! In thirty seconds, I'll show you how our new planner app saves your mornings." AI-generated with Beatra.*
+
+Prompt:
+
+```text
+A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
 
 ## What you get

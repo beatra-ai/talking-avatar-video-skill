@@ -14,6 +14,10 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="左为虚构讲解员人像输入，右为由一句合成英文口播驱动生成的数字人视频中的一帧。由 Beatra AI 生成。"></p>
+
+*左为虚构讲解员人像输入，右为由一句合成英文口播驱动生成的数字人视频中的一帧。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.0 |
@@ -40,6 +44,20 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 
 ```text
 从 https://github.com/beatra-ai/talking-avatar-video-skill 安装 talking-avatar-video skill（目录 skills/talking-avatar-video），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 效果示例
+
+<p align="center"><img src="assets/preview.webp" width="800" alt="由一张虚构人像和一句合成口播生成的 6 秒数字人讲解视频（台词：&quot;Hi! In thirty seconds, I&#x27;ll show you how our new planner app saves your mornings.&quot;）。由 Beatra AI 生成。"></p>
+
+[▶ 观看完整视频（MP4）](assets/full.mp4)
+
+*带声音的完整数字人视频：虚构的产品讲解员说出 "Hi! In thirty seconds, I'll show you how our new planner app saves your mornings."。由 Beatra AI 生成。*
+
+提示词：
+
+```text
+A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
 
 ## 你能得到什么
