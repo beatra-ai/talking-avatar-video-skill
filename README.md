@@ -20,7 +20,7 @@ Turn one portrait and a short script into a talking avatar video, from inside Cl
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.4 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.8 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video). Report issues there.
 
@@ -86,12 +86,12 @@ Yes, when its type and length fit a currently supported video route.
 
 The speech drives facial motion, and the finished clip is reviewed for mouth timing, identity, voice clarity, and motion stability before choosing the most useful adjustment.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update talking-avatar-video` or `gh skill update talking-avatar-video`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 

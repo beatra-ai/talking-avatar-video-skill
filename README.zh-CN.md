@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.4 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.8 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video) 自动发布，问题请到那里反馈。
 
@@ -85,10 +85,11 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 语音会驱动面部动作，交付后会重点查看口型节奏、人物特征、声音清晰度和动作稳定性，并据此确定最值得调整的一点。
 
-## 更新
+## 更新与安全
 
-安装后的 skill 每天最多检查一次新版本，替换前先校验官方归档，任何一步失败都不会动你已安装的版本。
-随时可以关闭，见 skill 内的 `references/automatic-updates-and-safety.md`。
+自 2026 年 10 月的版本起，本 skill 不再包含自更新程序：它只运行你安装的文件，从不自行替换。
+请用安装时的工具更新——`npx skills update talking-avatar-video` 或 `gh skill update talking-avatar-video`。
+详见 skill 内的 `references/updates-and-security.md`。
 
 ## 许可证
 
