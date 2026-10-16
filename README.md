@@ -20,7 +20,7 @@ Turn one portrait and a short script into a talking avatar video, from inside Cl
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.8 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.9 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video). Report issues there.
 
@@ -61,6 +61,13 @@ Prompt:
 A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
 
+## Specs
+
+As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
+
+- **Text to speech** — 2 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo); FLAC, MP3, OPUS, PCM, WAV; 40 languages; up to 44.1 kHz; up to 50000 characters per request
+- **Image to video** — 9 models (wan2.7-i2v, wan3.0-video, minimax-h3, seedance-2-mini, happyhorse-1.1-i2v, seedance-2-fast, seedance-2, wan3.0-video-prime, seedance-2.5); 480p to 4K; 2–30 s; aspect ratios 16:9, 1:1, 21:9, 3:4, 4:3, 9:16; MOV, MP4; 2 with native audio
+
 ## What you get
 
 - **Prepare the speech** — Use a supplied speech track or turn a short script into reviewable narration before the video stage.
@@ -98,3 +105,9 @@ Details: `references/updates-and-security.md` inside the skill.
 [MIT-0](LICENSE) — free to use, modify, and redistribute, including
 commercially. No attribution required. Same terms as these skills carry on
 ClawHub.
+
+## Links
+
+- Website — https://beatra.ai
+- Docs — https://docs.beatra.ai
+- Console — https://console.beatra.ai

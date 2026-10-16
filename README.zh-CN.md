@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.8 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.2.9 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video) 自动发布，问题请到那里反馈。
 
@@ -60,6 +60,13 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
 
+## 规格
+
+截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
+
+- **语音合成** — 2 个模型（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo）；FLAC、MP3、OPUS、PCM、WAV；40 种语言；最高 44.1 kHz；单次最多 50000 字符
+- **图生视频** — 9 个模型（wan2.7-i2v、wan3.0-video、minimax-h3、seedance-2-mini、happyhorse-1.1-i2v、seedance-2-fast、seedance-2、wan3.0-video-prime、seedance-2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4；2 个带原生音频
+
 ## 你能得到什么
 
 - **先把旁白准备好** — 使用现成语音，或先把短脚本生成可试听的旁白，再进入视频阶段。
@@ -94,3 +101,13 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 ## 许可证
 
 [MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+
+## 相关链接
+
+- 官网 — https://www.beatra.cn
+- 文档 — https://docs.beatra.cn
+- 控制台 — https://console.beatra.cn
+
+- 微信小程序 — 国内用户微信扫码使用
+
+<img src="assets/beatra-mini-program-qr.jpg" alt="Beatra 微信小程序码" width="160">
