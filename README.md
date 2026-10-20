@@ -1,6 +1,8 @@
 # Talking Avatar Video Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [Multilingual Voiceover Skill](https://github.com/beatra-ai/multilingual-voiceover-skill)
 
 Turn one portrait and a short script into a talking avatar video, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -56,6 +58,12 @@ Install the talking-avatar-video skill from https://github.com/beatra-ai/talking
 [▶ Watch the full video (MP4)](assets/full.mp4)
 
 *Full talking-avatar clip with voice: a fictional product educator says "Hi! In thirty seconds, I'll show you how our new planner app saves your mornings." AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Use ./presenter.jpg as the presenter and have her say this line to camera in a warm, natural voice: "Hi! In thirty seconds, I'll show you how our new planner app saves your mornings." Keep the shot steady and the expression friendly.
+```
 
 Prompt:
 

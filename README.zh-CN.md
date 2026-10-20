@@ -1,6 +1,8 @@
 # Talking Avatar Video Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [Multilingual Voiceover Skill](https://github.com/beatra-ai/multilingual-voiceover-skill)
 
 把一张人像和一段脚本做成数字人口播视频，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -54,6 +56,12 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 [▶ 观看完整视频（MP4）](assets/full.mp4)
 
 *带声音的完整数字人视频：虚构的产品讲解员说出 "Hi! In thirty seconds, I'll show you how our new planner app saves your mornings."。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+用 ./presenter.jpg 当主播，让她面对镜头、用温和自然的语气说这句话：“Hi! In thirty seconds, I'll show you how our new planner app saves your mornings.” 画面固定，表情亲切。
+```
 
 提示词：
 
