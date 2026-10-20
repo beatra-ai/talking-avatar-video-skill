@@ -7,7 +7,7 @@
 把一张人像和一段脚本做成数字人口播视频，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
 > [!IMPORTANT]
-> 生成需要 [Beatra](https://beatra.ai) 账号并消耗积分，安装本身不收费。
+> 生成需要 [Beatra](https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill) 账号并消耗积分，安装本身不收费。
 
 | 问题 | 回答 |
 | --- | --- |
@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.0 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.1 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video) 自动发布，问题请到那里反馈。
 
@@ -127,8 +127,8 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## 相关链接
 
-- 官网 — https://www.beatra.cn
-- 文档 — https://docs.beatra.cn
+- 官网 — https://www.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
+- 文档 — https://docs.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - 控制台 — https://console.beatra.cn
 - 给 AI Agent 读的说明 — https://www.beatra.cn/llms.txt（索引）· https://www.beatra.cn/llms-full.txt（全部 skill 合成一个文件）
 
