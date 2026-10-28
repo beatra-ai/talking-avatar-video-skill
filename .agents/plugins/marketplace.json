@@ -1,0 +1,20 @@
+{
+  "name": "talking-avatar-video-skill",
+  "interface": {
+    "displayName": "Talking Avatar Video"
+  },
+  "plugins": [
+    {
+      "name": "talking-avatar-video",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

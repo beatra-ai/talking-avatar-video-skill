@@ -35,6 +35,33 @@ With the [`skills`](https://skills.sh) CLI:
 npx skills add beatra-ai/talking-avatar-video-skill
 ```
 
+As a Claude Code plugin:
+
+```bash
+claude plugin marketplace add beatra-ai/talking-avatar-video-skill
+claude plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+As a Codex plugin:
+
+```bash
+codex plugin marketplace add beatra-ai/talking-avatar-video-skill
+codex plugin add talking-avatar-video@talking-avatar-video-skill
+```
+
+As a GitHub Copilot CLI plugin:
+
+```bash
+copilot plugin marketplace add beatra-ai/talking-avatar-video-skill
+copilot plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+As a Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 With the GitHub CLI:
 
 ```bash

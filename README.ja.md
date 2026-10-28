@@ -35,6 +35,33 @@
 npx skills add beatra-ai/talking-avatar-video-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/talking-avatar-video-skill
+claude plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/talking-avatar-video-skill
+codex plugin add talking-avatar-video@talking-avatar-video-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/talking-avatar-video-skill
+copilot plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash

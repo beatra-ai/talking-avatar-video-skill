@@ -1,0 +1,13 @@
+{
+  "name": "talking-avatar-video",
+  "displayName": "Talking Avatar Video",
+  "description": "Turn one portrait and a short script or speech track into a directed talking-avatar video for explainers, announcements, lessons, and product messages.",
+  "version": "0.3.4",
+  "author": {
+    "name": "Beatra AI"
+  },
+  "homepage": "https://beatra.ai/skills/talking-avatar-video",
+  "repository": "https://github.com/beatra-ai/talking-avatar-video-skill",
+  "license": "MIT-0",
+  "logo": "assets/icon.png"
+}

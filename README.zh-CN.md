@@ -35,6 +35,33 @@
 npx skills add beatra-ai/talking-avatar-video-skill
 ```
 
+作为 Claude Code 插件：
+
+```bash
+claude plugin marketplace add beatra-ai/talking-avatar-video-skill
+claude plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+作为 Codex 插件：
+
+```bash
+codex plugin marketplace add beatra-ai/talking-avatar-video-skill
+codex plugin add talking-avatar-video@talking-avatar-video-skill
+```
+
+作为 GitHub Copilot CLI 插件：
+
+```bash
+copilot plugin marketplace add beatra-ai/talking-avatar-video-skill
+copilot plugin install talking-avatar-video@talking-avatar-video-skill
+```
+
+作为 Gemini CLI 扩展：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
