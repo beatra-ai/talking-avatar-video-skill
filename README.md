@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -97,6 +103,16 @@ Prompt:
 ```text
 A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Image — One portrait of the presenter | JPG, PNG | 1 image per request |
+| **Input** | Text — A short script to narrate | — | — |
+| **Input** | Audio — Speech track you recorded (optional) | MP3, WAV | 2–15 s; up to 15 MB each |
+| **Output** | Video — Talking-head presenter clip driven by the speech | MP4 | 1 video per request; up to 15 s |
+| **Output** | Audio — Narration made from your script | MP3 | — |
 
 ## Technical Specifications & Output Limits
 
@@ -134,15 +150,15 @@ As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 ### What do I need to start?
 
-One portrait and either a supplied speech track or a short script plus a voice choice.
+One portrait and either a speech track you recorded or a short script plus a voice.
 
 ### Can I use my own recorded audio?
 
-Yes, when its type and length fit a currently supported video route.
+Yes. An MP3 or WAV recording of 2 to 15 seconds, up to 15 MB, drives the presenter directly.
 
-### How are lip sync and presenter consistency reviewed?
+### How is the presenter clip made?
 
-The speech drives facial motion, and the finished clip is reviewed for mouth timing, identity, voice clarity, and motion stability before choosing the most useful adjustment.
+The face is animated from your portrait, and the speech drives the mouth.
 
 ## Updates and security
 
@@ -153,9 +169,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill).
 
 ## Links
 

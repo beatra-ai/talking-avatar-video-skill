@@ -62,6 +62,12 @@ copilot plugin install talking-avatar-video@talking-avatar-video-skill
 gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -95,6 +101,16 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 ```text
 A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 图片：一张主播人像 | JPG、PNG | 单次 1 张 |
+| **输入** | 文本：一段要讲的短脚本 | — | — |
+| **输入** | 音频：你录好的语音（可选） | MP3、WAV | 2–15 秒；单个文件最大 15 MB |
+| **输出** | 视频：随口播开口说话的数字人口播视频 | MP4 | 单次 1 段；最长 15 秒 |
+| **输出** | 音频：用你的脚本生成的旁白 | MP3 | — |
 
 ## 技术规格与输出限制
 
@@ -132,15 +148,15 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ### 开始制作需要什么？
 
-需要一张清晰人像，以及一段现成语音，或一份短脚本加已选音色。
+一张清晰人像，再加一段现成语音，或一份短脚本加一个音色。
 
 ### 可以使用自己的录音吗？
 
-可以，它的格式和时长需要符合当前支持的视频方式。
+可以。2 到 15 秒、15 MB 以内的 MP3 或 WAV 录音可以直接驱动人像开口。
 
-### 成片会怎样检查口型与人物一致性？
+### 数字人口播是怎么做出来的？
 
-语音会驱动面部动作，交付后会重点查看口型节奏、人物特征、声音清晰度和动作稳定性，并据此确定最值得调整的一点。
+画面里的人物由你的人像动起来，口型由语音驱动。
 
 ## 更新与安全
 
@@ -150,7 +166,9 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill)。
 
 ## 相关链接
 

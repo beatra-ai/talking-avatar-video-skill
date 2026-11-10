@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/talking-avatar-video-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/talking-avatar-video-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -96,6 +102,16 @@ https://github.com/beatra-ai/talking-avatar-video-skill から talking-avatar-vi
 A friendly presenter speaks directly to camera with a warm, natural delivery: steady eye line into the lens, restrained friendly expression, subtle natural head movement and occasional blinks, relaxed shoulders. Locked-off stable camera, plain studio background stays unchanged, same face, hair and green sweater throughout.
 ```
 
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | 画像：プレゼンターのポートレート1枚 | JPG、PNG | 1 リクエストにつき 1 枚 |
+| **入力** | テキスト：読み上げる短い台本 | — | — |
+| **入力** | 音声：自分で録音した音声（任意） | MP3、WAV | 2〜15 秒／1 ファイル最大 15 MB |
+| **出力** | 動画：音声に合わせて話すプレゼンター動画 | MP4 | 1 リクエストにつき 1 本／最長 15 秒 |
+| **出力** | 音声：台本から作ったナレーション | MP3 | — |
+
 ## 技術仕様と出力上限
 
 2026-10-18 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
@@ -123,15 +139,15 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ### 始めるために必要なものは何ですか？
 
-鮮明なポートレート1枚と、用意した音声、または短い台本と選択済みの声が必要です。
+鮮明なポートレート1枚と、録音した音声、または短い台本とボイスです。
 
 ### 自分で録音した音声を使えますか？
 
-はい。形式と長さが現在対応している動画方式に合う場合に使えます。
+はい。2〜15秒、15 MB までの MP3 か WAV の録音で、そのままプレゼンターを動かせます。
 
-### 完成後の口の動きと人物の一貫性はどう確認しますか？
+### プレゼンター動画はどう作りますか？
 
-音声に沿った口の動き、人物の特徴、声の聞きやすさ、映像の安定性を重点的に確認し、次に整える価値が高い一点を選びます。
+顔はポートレートから動かし、口の動きは音声で付けます。
 
 ## 更新とセキュリティ
 
@@ -141,7 +157,9 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill)が適用されます。
 
 ## リンク
 

@@ -10,6 +10,20 @@
   "homepage": "https://beatra.ai/skills/talking-avatar-video",
   "repository": "https://github.com/beatra-ai/talking-avatar-video-skill",
   "license": "MIT-0",
+  "keywords": [
+    "talking avatar",
+    "AI presenter",
+    "AI spokesperson video",
+    "digital human video",
+    "talking head video",
+    "talking photo",
+    "photo to talking video",
+    "avatar narration",
+    "lip sync video",
+    "product explainer avatar",
+    "training video presenter",
+    "virtual presenter"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +33,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/talking-avatar-video",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "Use Talking Avatar & AI Presenter Video to make a talking-head clip introducing my guitar class. Portrait and script attached."
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }
