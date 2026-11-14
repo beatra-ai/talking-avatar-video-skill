@@ -12,7 +12,7 @@
 | 項目 | 内容 |
 | --- | --- |
 | **できること** | ポートレート1枚と短い台本または音声から、解説、告知、研修、商品紹介に使えるトーキングアバター動画を作ります。 |
-| **モデル** | MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5 |
+| **モデル** | MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Doubao Seed TTS 2.0、ElevenLabs v4 Turbo、ElevenLabs v4、Wan 3.0 Video、Wan 2.7、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5 |
 | **動作要件** | Python 3.10 以上と、`SKILL.md` を読み込めるエージェント |
 | **費用** | インストールは無料。生成のたびに Beatra アカウントのクレジットを消費しますが、課金されるのは、その生成を明示的に依頼したとき、または確認カードを承認したときだけです。 |
 | **対応エージェント** | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw |
@@ -82,6 +82,8 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 https://github.com/beatra-ai/talking-avatar-video-skill から talking-avatar-video スキル（フォルダ skills/talking-avatar-video）をインストールし、その SKILL.md に従って私の Beatra アカウントに接続してください。
 ```
 
+クリーン環境で動作確認済み：Antigravity CLI (2026-11-09)。
+
 ## 作例
 
 <p align="center"><img src="assets/preview.webp" width="800" alt="架空のポートレート 1 枚と合成音声の 1 文「Hi! In thirty seconds, I&#x27;ll show you how our new planner app saves your mornings.」から作った 6 秒のトーキングアバター動画。Beatra AI で生成。"></p>
@@ -114,12 +116,12 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## 技術仕様と出力上限
 
-2026-10-18 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
+2026-11-14 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
 
 - **アップロード** — 1 ファイルあたり最大 100 MB。下記の各モデルの入力制限も適用されます
-- **音声合成** — 2 モデル（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo）／FLAC、MP3、OPUS、PCM、WAV／40 言語／サンプルレート 8、16、22.05、24、32、44.1 kHz／1 リクエストあたり最大 50000 文字
+- **音声合成** — 5 モデル（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Doubao Seed TTS 2.0、ElevenLabs v4 Turbo、ElevenLabs v4）／FLAC、MP3、OPUS、PCM、WAV／40 言語／サンプルレート 8、16、22.05、24、32、44.1 kHz／1 リクエストあたり最大 50000 文字
   - 言語（ISO 639 コード）：zh, yue, en, es, fr, ru, de, pt, ar, it, ja, ko, id, vi, tr, nl, uk, th, pl, ro, el, cs, fi, hi, bg, da, he, ms, fa, sk, sv, hr, fil, hu, no, sl, ca, nn, ta, af
-- **画像から動画** — 9 モデル（Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）／480p〜4K／2〜30 秒／アスペクト比 16:9、1:1、21:9、3:4、4:3、9:16／MOV、MP4
+- **画像から動画** — 9 モデル（Wan 3.0 Video、Wan 2.7、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）／480p〜4K／2〜30 秒／アスペクト比 16:9、1:1、21:9、3:4、4:3、9:16／MOV、MP4
   - 4K：Seedance 2.0、最長 15 秒
   - 30 秒：Wan 3.0 Video、Wan 3.0 Video Prime、Seedance 2.5、最高 1080p
   - ネイティブ音声：Wan 2.7、MiniMax H3
@@ -163,6 +165,7 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## リンク
 
+- スキルページ — https://beatra.ai/skills/talking-avatar-video?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - ウェブサイト — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - ドキュメント — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - コンソール — https://console.beatra.ai

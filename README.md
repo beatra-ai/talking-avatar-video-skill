@@ -12,7 +12,7 @@ Turn one portrait and a short script into a talking avatar video, from inside Cl
 | Question | Answer |
 | --- | --- |
 | **What it does** | Turn one portrait and a short script or speech track into a directed talking-avatar video for explainers, announcements, lessons, and product messages. |
-| **Models** | MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Wan 2.7, Wan 3.0 Video, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5 |
+| **Models** | MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4, Wan 3.0 Video, Wan 2.7, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5 |
 | **Requirements** | Python 3.10+ and an agent that loads `SKILL.md` |
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw |
@@ -84,6 +84,8 @@ Or paste this into your agent:
 Install the talking-avatar-video skill from https://github.com/beatra-ai/talking-avatar-video-skill (folder skills/talking-avatar-video), then follow its SKILL.md to connect my Beatra account.
 ```
 
+Tested in clean-room CI: Antigravity CLI (2026-11-09).
+
 ## Examples
 
 <p align="center"><img src="assets/preview.webp" width="800" alt="A 6-second talking-avatar clip made from one fictional portrait and a synthesized line: &quot;Hi! In thirty seconds, I&#x27;ll show you how our new planner app saves your mornings.&quot; AI-generated with Beatra."></p>
@@ -116,19 +118,19 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## Technical Specifications & Output Limits
 
-As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
+As of 2026-11-14. Live list: https://docs.beatra.ai/en/docs/models
 
 - **Uploads** — up to 100 MB per file; the per-model input limits below also apply
-- **Text to speech** — 2 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo); FLAC, MP3, OPUS, PCM, WAV; 40 languages; sample rates 8, 16, 22.05, 24, 32, 44.1 kHz; up to 50000 characters per request
+- **Text to speech** — 5 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4); FLAC, MP3, OPUS, PCM, WAV; 40 languages; sample rates 8, 16, 22.05, 24, 32, 44.1 kHz; up to 50000 characters per request
   - Languages (ISO 639 codes): zh, yue, en, es, fr, ru, de, pt, ar, it, ja, ko, id, vi, tr, nl, uk, th, pl, ro, el, cs, fi, hi, bg, da, he, ms, fa, sk, sv, hr, fil, hu, no, sl, ca, nn, ta, af
-- **Image to video** — 9 models (Wan 2.7, Wan 3.0 Video, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5); 480p to 4K; 2–30 s; aspect ratios 16:9, 1:1, 21:9, 3:4, 4:3, 9:16; MOV, MP4
+- **Image to video** — 9 models (Wan 3.0 Video, Wan 2.7, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5); 480p to 4K; 2–30 s; aspect ratios 16:9, 1:1, 21:9, 3:4, 4:3, 9:16; MOV, MP4
   - 4K: Seedance 2.0, up to 15 s
   - 30 s: Wan 3.0 Video, Wan 3.0 Video Prime, Seedance 2.5, up to 1080p
   - Native audio: Wan 2.7, MiniMax H3
 
 ## Why use Beatra instead of calling model APIs directly
 
-- **One account for every model this skill uses** — Text to speech 2; Image to video 9 (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Wan 2.7, Wan 3.0 Video, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5) (as of 2026-10-18), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **One account for every model this skill uses** — Text to speech 5; Image to video 9 (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4, Wan 3.0 Video, Wan 2.7, MiniMax H3, Seedance 2.0 Mini, HappyHorse 1.1, Seedance 2.0 Fast, Seedance 2.0, Wan 3.0 Video Prime, Seedance 2.5) (as of 2026-11-14), behind one Beatra sign-in; no keys from individual model providers to manage.
 - **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
 - **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
 - **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
@@ -176,6 +178,7 @@ Media generation runs on Beatra's cloud service under the [Beatra Terms of Servi
 
 ## Links
 
+- Skill page — https://beatra.ai/skills/talking-avatar-video?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - Website — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - Docs — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - Console — https://console.beatra.ai

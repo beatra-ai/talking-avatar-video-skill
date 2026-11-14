@@ -12,7 +12,7 @@
 | 问题 | 回答 |
 | --- | --- |
 | **能做什么** | 把一张人像和短脚本或语音，制作成适合讲解、公告、课程和产品介绍的数字人口播视频。 |
-| **底层模型** | MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5 |
+| **底层模型** | MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Doubao Seed TTS 2.0、ElevenLabs v4 Turbo、ElevenLabs v4、Wan 3.0 Video、Wan 2.7、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5 |
 | **运行要求** | Python 3.10+，以及能加载 `SKILL.md` 的 Agent |
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw |
@@ -82,6 +82,8 @@ gh skill install beatra-ai/talking-avatar-video-skill talking-avatar-video
 从 https://github.com/beatra-ai/talking-avatar-video-skill 安装 talking-avatar-video skill（目录 skills/talking-avatar-video），然后按它的 SKILL.md 连接我的 Beatra 账号。
 ```
 
+干净环境实测通过：Antigravity CLI (2026-11-09)。
+
 ## 效果示例
 
 <p align="center"><img src="assets/preview.webp" width="800" alt="由一张虚构人像和一句合成口播生成的 6 秒数字人讲解视频（台词：&quot;Hi! In thirty seconds, I&#x27;ll show you how our new planner app saves your mornings.&quot;）。由 Beatra AI 生成。"></p>
@@ -114,19 +116,19 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## 技术规格与输出限制
 
-截至 2026-10-18。实时列表：https://docs.beatra.ai/zh/docs/models
+截至 2026-11-14。实时列表：https://docs.beatra.ai/zh/docs/models
 
 - **上传** — 单个文件最大 100 MB；同时适用下方各模型的输入限制
-- **语音合成** — 2 个模型（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo）；FLAC、MP3、OPUS、PCM、WAV；40 种语言；采样率 8、16、22.05、24、32、44.1 kHz；单次最多 50000 字符
+- **语音合成** — 5 个模型（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Doubao Seed TTS 2.0、ElevenLabs v4 Turbo、ElevenLabs v4）；FLAC、MP3、OPUS、PCM、WAV；40 种语言；采样率 8、16、22.05、24、32、44.1 kHz；单次最多 50000 字符
   - 语言（ISO 639 代码）：zh, yue, en, es, fr, ru, de, pt, ar, it, ja, ko, id, vi, tr, nl, uk, th, pl, ro, el, cs, fi, hi, bg, da, he, ms, fa, sk, sv, hr, fil, hu, no, sl, ca, nn, ta, af
-- **图生视频** — 9 个模型（Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4
+- **图生视频** — 9 个模型（Wan 3.0 Video、Wan 2.7、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）；480p 至 4K；2–30 秒；画幅 16:9、1:1、21:9、3:4、4:3、9:16；MOV、MP4
   - 4K：Seedance 2.0，最长 15 秒
   - 30 秒：Wan 3.0 Video、Wan 3.0 Video Prime、Seedance 2.5，最高 1080p
   - 原生音频：Wan 2.7、MiniMax H3
 
 ## 为什么用 Beatra，而不是直接调用模型 API
 
-- **一个账号用到本 skill 的全部模型** — 语音合成 2；图生视频 9（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Wan 2.7、Wan 3.0 Video、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）（截至 2026-10-18），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
+- **一个账号用到本 skill 的全部模型** — 语音合成 5；图生视频 9（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo、Doubao Seed TTS 2.0、ElevenLabs v4 Turbo、ElevenLabs v4、Wan 3.0 Video、Wan 2.7、MiniMax H3、Seedance 2.0 Mini、HappyHorse 1.1、Seedance 2.0 Fast、Seedance 2.0、Wan 3.0 Video Prime、Seedance 2.5）（截至 2026-11-14），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
 - **花不花钱由你决定** — 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费。
 - **先策划，再生成** — skill 先帮你规划、指导和检查，再在 Beatra 上生成。
 - **文件可以核验** — `skills/` 下的每个文件都与 cdn.beatra.ai 上的发布归档逐字节一致，每次推送前用 SHA-256 校验。
@@ -172,6 +174,7 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 
 ## 相关链接
 
+- Skill 详情页 — https://www.beatra.cn/skills/talking-avatar-video?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - 官网 — https://www.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - 文档 — https://docs.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=talking-avatar-video-skill
 - 控制台 — https://console.beatra.cn
