@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.5 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.6 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video) 自动发布，问题请到那里反馈。
 
@@ -111,7 +111,7 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 | **输入** | 图片：一张主播人像 | JPG、PNG | 单次 1 张 |
 | **输入** | 文本：一段要讲的短脚本 | — | — |
 | **输入** | 音频：你录好的语音（可选） | MP3、WAV | 2–15 秒；单个文件最大 15 MB |
-| **输出** | 视频：随口播开口说话的数字人口播视频 | MP4 | 单次 1 段；最长 15 秒 |
+| **输出** | 视频：随口播开口说话的数字人口播视频 | MP4 | 单次 1 段；最长 120 秒 |
 | **输出** | 音频：用你的脚本生成的旁白 | MP3 | — |
 
 ## 技术规格与输出限制

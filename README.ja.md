@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.5 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.6 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video) から自動的に公開されています。問題の報告はそちらへお願いします。
 
@@ -111,7 +111,7 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 | **入力** | 画像：プレゼンターのポートレート1枚 | JPG、PNG | 1 リクエストにつき 1 枚 |
 | **入力** | テキスト：読み上げる短い台本 | — | — |
 | **入力** | 音声：自分で録音した音声（任意） | MP3、WAV | 2〜15 秒／1 ファイル最大 15 MB |
-| **出力** | 動画：音声に合わせて話すプレゼンター動画 | MP4 | 1 リクエストにつき 1 本／最長 15 秒 |
+| **出力** | 動画：音声に合わせて話すプレゼンター動画 | MP4 | 1 リクエストにつき 1 本／最長 120 秒 |
 | **出力** | 音声：台本から作ったナレーション | MP3 | — |
 
 ## 技術仕様と出力上限

@@ -23,7 +23,7 @@ Turn one portrait and a short script into a talking avatar video, from inside Cl
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.5 |
+| [`talking-avatar-video`](skills/talking-avatar-video) | [SKILL.md](skills/talking-avatar-video/SKILL.md) | 0.3.6 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/talking-avatar-video). Report issues there.
 
@@ -113,7 +113,7 @@ A friendly presenter speaks directly to camera with a warm, natural delivery: st
 | **Input** | Image — One portrait of the presenter | JPG, PNG | 1 image per request |
 | **Input** | Text — A short script to narrate | — | — |
 | **Input** | Audio — Speech track you recorded (optional) | MP3, WAV | 2–15 s; up to 15 MB each |
-| **Output** | Video — Talking-head presenter clip driven by the speech | MP4 | 1 video per request; up to 15 s |
+| **Output** | Video — Talking-head presenter clip driven by the speech | MP4 | 1 video per request; up to 120 s |
 | **Output** | Audio — Narration made from your script | MP3 | — |
 
 ## Technical Specifications & Output Limits
